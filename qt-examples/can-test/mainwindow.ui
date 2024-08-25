@@ -1,0 +1,1470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1198</width>
+    <height>698</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_7" columnstretch="1,1">
+    <item row="0" column="0">
+     <widget class="QFrame" name="framePrimary">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout" rowstretch="0,1,4">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="groupBoxPrimaryConnect">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>75</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>75</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox {
+
+	color: #5f5290;
+	border: 1px solid black;
+}
+QGroupBox::title {
+
+	subcontrol-origin: margin;
+	subcontrol-position: top centre;
+}
+
+QGroupBox::disabled {
+
+	color: #b6b6b6;
+	background-color: #e7e7e7;
+	border: 1px solid grey;
+}</string>
+         </property>
+         <property name="title">
+          <string>CONNECT</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>15</number>
+          </property>
+          <property name="leftMargin">
+           <number>15</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>15</number>
+          </property>
+          <property name="bottomMargin">
+           <number>9</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="labelPrimaryInterface">
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	color: #5f5290;
+	border:none;
+}
+
+QLabel::disabled {
+
+	color:#b6b6b6;
+	background-color: #e7e7e7;
+}</string>
+            </property>
+            <property name="text">
+             <string>INTERFACE </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditPrimaryInterface">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+
+	border:1px solid black;
+	color: #000000;
+}
+
+QLineEdit::disabled{
+
+	color:#b6b6b6;
+	border: 1px solid #b6b6b6;
+	
+}</string>
+            </property>
+            <property name="text">
+             <string>vcan0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonPrimaryOpen">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	background-color:#5f5290;
+	color:#ffffff;
+	border:2px solid #5f5290;
+}
+
+QPushButton:hover
+{
+	background-color:#3f3761;
+	color:#ffffff;
+	border: 2px solid #3f3761;
+}
+
+QPushButton:pressed
+{
+	background-color:transparent;
+	color:#000000;
+	border: 2px solid #5f5290;
+}
+
+QPushButton:disabled
+{
+	background-color:#cccccc;
+	color:#959595;
+	border: 2px solid #cccccc;
+}</string>
+            </property>
+            <property name="text">
+             <string>OPEN</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QGroupBox" name="groupBoxPrimaryReceive">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox {
+
+	color: #5f5290;
+	border: 1px solid black;
+}
+QGroupBox::title {
+
+	subcontrol-origin: margin;
+	subcontrol-position: top centre;
+}
+
+QGroupBox::disabled {
+
+	color: #b6b6b6;
+	background-color: #e7e7e7;
+	border: 1px solid grey;
+}</string>
+         </property>
+         <property name="title">
+          <string>RECEIVE</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="rightMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
+          <property name="verticalSpacing">
+           <number>6</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QTableView" name="tableViewPrimary">
+            <property name="styleSheet">
+             <string notr="true">QTableView {
+
+	border:1px solid black;
+}
+
+QTableView::disabled {
+
+	background-color: #e7e7e7;
+	border: 1px solid grey;
+}</string>
+            </property>
+            <property name="showGrid">
+             <bool>false</bool>
+            </property>
+            <attribute name="horizontalHeaderCascadingSectionResizes">
+             <bool>true</bool>
+            </attribute>
+           </widget>
+          </item>
+          <item row="2" column="0" colspan="2">
+           <widget class="QFrame" name="frame_2">
+            <property name="styleSheet">
+             <string notr="true">QFrame {
+
+	border:none;
+}
+
+QFrame::disabled {
+	border:none;
+	color:#b6b6b6;
+	background-color: #e7e7e7;
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QRadioButton" name="radioButtonPrimaryAscii">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QRadioButton {
+	color: #5f5290;
+	border:none;
+}
+
+QRadioButton::disabled {
+
+	color:#b6b6b6;
+	background-color: #e7e7e7;
+}</string>
+               </property>
+               <property name="text">
+                <string>ASCII</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="radioButtonPrimaryHex">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QRadioButton {
+	color: #5f5290;
+	border:none;
+}
+
+QRadioButton::disabled {
+
+	color:#b6b6b6;
+	background-color: #e7e7e7;
+}</string>
+               </property>
+               <property name="text">
+                <string>HEX</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButtonPrimaryClear">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	background-color:#5f5290;
+	color:#ffffff;
+	border:2px solid #5f5290;
+}
+
+QPushButton:hover
+{
+	background-color:#3f3761;
+	color:#ffffff;
+	border: 2px solid #3f3761;
+}
+
+QPushButton:pressed
+{
+	background-color:transparent;
+	color:#000000;
+	border: 2px solid #5f5290;
+}
+
+QPushButton:disabled
+{
+	background-color:#cccccc;
+	color:#959595;
+	border: 2px solid #cccccc;
+}</string>
+               </property>
+               <property name="text">
+                <string>CLEAR</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QGroupBox" name="groupBoxPrimaryTransmit">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox {
+
+	color: #5f5290;
+	border: 1px solid black;
+}
+QGroupBox::title {
+
+	subcontrol-origin: margin;
+	subcontrol-position: top centre;
+}
+
+QGroupBox::disabled {
+
+	color: #b6b6b6;
+	background-color: #e7e7e7;
+	border: 1px solid grey;
+}</string>
+         </property>
+         <property name="title">
+          <string>TRANSMIT</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <property name="leftMargin">
+           <number>15</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>15</number>
+          </property>
+          <property name="bottomMargin">
+           <number>9</number>
+          </property>
+          <property name="horizontalSpacing">
+           <number>15</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="labelPrimaryId">
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	color: #5f5290;
+	border:none;
+}
+
+QLabel::disabled {
+
+	color:#b6b6b6;
+	background-color: #e7e7e7;
+}</string>
+            </property>
+            <property name="text">
+             <string>ID</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEditPrimaryId">
+            <property name="minimumSize">
+             <size>
+              <width>160</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+
+	border:1px solid black;
+	color: #000000;
+}
+
+QLineEdit::disabled{
+
+	color:#b6b6b6;
+	border: 1px solid #b6b6b6;
+	
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string>1</string>
+            </property>
+            <property name="maxLength">
+             <number>32767</number>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QCheckBox" name="checkBoxPrimaryExtended">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QCheckBox {
+	color: #5f5290;
+	border:none;
+}
+
+QCheckBox::disabled {
+
+	color:#b6b6b6;
+	background-color: #e7e7e7;
+}</string>
+            </property>
+            <property name="text">
+             <string>EXTENDED</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="labelPrimaryDataAscii">
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	color: #5f5290;
+	border:none;
+}
+
+QLabel::disabled {
+
+	color:#b6b6b6;
+	background-color: #e7e7e7;
+}</string>
+            </property>
+            <property name="text">
+             <string>ASCII</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEditPrimaryDataAscii">
+            <property name="minimumSize">
+             <size>
+              <width>160</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+
+	border:1px solid black;
+	color: #000000;
+}
+
+QLineEdit::disabled{
+
+	color:#b6b6b6;
+	border: 1px solid #b6b6b6;
+	
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string>hellocan</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="pushButtonPrimarySendAscii">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	background-color:#5f5290;
+	color:#ffffff;
+	border:2px solid #5f5290;
+}
+
+QPushButton:hover
+{
+	background-color:#3f3761;
+	color:#ffffff;
+	border: 2px solid #3f3761;
+}
+
+QPushButton:pressed
+{
+	background-color:transparent;
+	color:#000000;
+	border: 2px solid #5f5290;
+}
+
+QPushButton:disabled
+{
+	background-color:#cccccc;
+	color:#959595;
+	border: 2px solid #cccccc;
+}</string>
+            </property>
+            <property name="text">
+             <string>SEND</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="labelPrimaryDataHex">
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	color: #5f5290;
+	border:none;
+}
+
+QLabel::disabled {
+
+	color:#b6b6b6;
+	background-color: #e7e7e7;
+}</string>
+            </property>
+            <property name="text">
+             <string>HEX</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEditPrimaryDataHex">
+            <property name="minimumSize">
+             <size>
+              <width>160</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+
+	border:1px solid black;
+	color: #000000;
+}
+
+QLineEdit::disabled{
+
+	color:#b6b6b6;
+	border: 1px solid #b6b6b6;
+	
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string>FFFFFFFFFFFFFFFF</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QPushButton" name="pushButtonPrimarySendHex">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	background-color:#5f5290;
+	color:#ffffff;
+	border:2px solid #5f5290;
+}
+
+QPushButton:hover
+{
+	background-color:#3f3761;
+	color:#ffffff;
+	border: 2px solid #3f3761;
+}
+
+QPushButton:pressed
+{
+	background-color:transparent;
+	color:#000000;
+	border: 2px solid #5f5290;
+}
+
+QPushButton:disabled
+{
+	background-color:#cccccc;
+	color:#959595;
+	border: 2px solid #cccccc;
+}</string>
+            </property>
+            <property name="text">
+             <string>SEND</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QFrame" name="frameSecondary">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3" rowstretch="0,1,4">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="groupBoxSecondaryConnect">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>75</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>75</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox {
+
+	color: #5f5290;
+	border: 1px solid black;
+}
+QGroupBox::title {
+
+	subcontrol-origin: margin;
+	subcontrol-position: top centre;
+}
+
+QGroupBox::disabled {
+
+	color: #b6b6b6;
+	background-color: #e7e7e7;
+	border: 1px solid grey;
+}</string>
+         </property>
+         <property name="title">
+          <string>CONNECT</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>15</number>
+          </property>
+          <property name="leftMargin">
+           <number>15</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>15</number>
+          </property>
+          <property name="bottomMargin">
+           <number>9</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="labelSecondaryInterface">
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	color: #5f5290;
+	border:none;
+}
+
+QLabel::disabled {
+
+	color:#b6b6b6;
+}</string>
+            </property>
+            <property name="text">
+             <string>INTERFACE </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditSecondaryInterface">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+
+	border:1px solid black;
+	color: #000000;
+}
+
+QLineEdit::disabled{
+
+	color:#b6b6b6;
+	border: 1px solid #b6b6b6;
+	
+}</string>
+            </property>
+            <property name="text">
+             <string>vcan1</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonSecondaryOpen">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	background-color:#5f5290;
+	color:#ffffff;
+	border:2px solid #5f5290;
+}
+
+QPushButton:hover
+{
+	background-color:#3f3761;
+	color:#ffffff;
+	border: 2px solid #3f3761;
+}
+
+QPushButton:pressed
+{
+	background-color:transparent;
+	color:#000000;
+	border: 2px solid #5f5290;
+}
+
+QPushButton:disabled
+{
+	background-color:#cccccc;
+	color:#959595;
+	border: 2px solid #cccccc;
+}</string>
+            </property>
+            <property name="text">
+             <string>OPEN</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QGroupBox" name="groupBoxSecondaryReceive">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox {
+
+	color: #5f5290;
+	border: 1px solid black;
+}
+QGroupBox::title {
+
+	subcontrol-origin: margin;
+	subcontrol-position: top centre;
+}
+
+QGroupBox::disabled {
+
+	color: #b6b6b6;
+	background-color: #e7e7e7;
+	border: 1px solid grey;
+}</string>
+         </property>
+         <property name="title">
+          <string>RECEIVE</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="rightMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
+          <item row="1" column="0" colspan="2">
+           <widget class="QFrame" name="frame_3">
+            <property name="styleSheet">
+             <string notr="true">QFrame {
+
+	border:none;
+}
+
+QFrame::disabled {
+	border:none;
+	color:#b6b6b6;
+	background-color: #e7e7e7;
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <item>
+              <widget class="QRadioButton" name="radioButtonSecondaryAscii">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QRadioButton {
+	color: #5f5290;
+	border:none;
+}
+
+QRadioButton::disabled {
+
+	color:#b6b6b6;
+	background-color: #e7e7e7;
+}</string>
+               </property>
+               <property name="text">
+                <string>ASCII</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="radioButtonSecondaryHex">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QRadioButton {
+	color: #5f5290;
+	border:none;
+}
+
+QRadioButton::disabled {
+
+	color:#b6b6b6;
+	background-color: #e7e7e7;
+}</string>
+               </property>
+               <property name="text">
+                <string>HEX</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButtonSecondaryClear">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{
+	background-color:#5f5290;
+	color:#ffffff;
+	border:2px solid #5f5290;
+}
+
+QPushButton:hover
+{
+	background-color:#3f3761;
+	color:#ffffff;
+	border: 2px solid #3f3761;
+}
+
+QPushButton:pressed
+{
+	background-color:transparent;
+	color:#000000;
+	border: 2px solid #5f5290;
+}
+
+QPushButton:disabled
+{
+	background-color:#cccccc;
+	color:#959595;
+	border: 2px solid #cccccc;
+}</string>
+               </property>
+               <property name="text">
+                <string>CLEAR</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QTableView" name="tableViewSecondary">
+            <property name="styleSheet">
+             <string notr="true">QTableView {
+
+	border:1px solid black;
+}
+
+QTableView::disabled {
+
+	background-color: #e7e7e7;
+	border: 1px solid grey;
+}</string>
+            </property>
+            <property name="showGrid">
+             <bool>false</bool>
+            </property>
+            <attribute name="horizontalHeaderCascadingSectionResizes">
+             <bool>true</bool>
+            </attribute>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QGroupBox" name="groupBoxSecondaryTransmit">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox {
+
+	color: #5f5290;
+	border: 1px solid black;
+}
+QGroupBox::title {
+
+	subcontrol-origin: margin;
+	subcontrol-position: top centre;
+}
+
+QGroupBox::disabled {
+
+	color: #b6b6b6;
+	background-color: #e7e7e7;
+	border: 1px solid grey;
+}</string>
+         </property>
+         <property name="title">
+          <string>TRANSMIT</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <property name="leftMargin">
+           <number>15</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>15</number>
+          </property>
+          <property name="horizontalSpacing">
+           <number>15</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="labelSecondaryId">
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	color: #5f5290;
+	border:none;
+}
+
+QLabel::disabled {
+
+	color:#b6b6b6;
+	background-color: #e7e7e7;
+}</string>
+            </property>
+            <property name="text">
+             <string>ID</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEditSecondaryId">
+            <property name="minimumSize">
+             <size>
+              <width>160</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+
+	border:1px solid black;
+	color: #000000;
+}
+
+QLineEdit::disabled{
+
+	color:#b6b6b6;
+	border: 1px solid #b6b6b6;
+	
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string>2</string>
+            </property>
+            <property name="maxLength">
+             <number>32767</number>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QCheckBox" name="checkBoxSecondaryExtended">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QCheckBox {
+	color: #5f5290;
+	border:none;
+}
+
+QCheckBox::disabled {
+
+	color:#b6b6b6;
+	background-color: #e7e7e7;
+}</string>
+            </property>
+            <property name="text">
+             <string>EXTENDED</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="labelSecondaryDataAscii">
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	color: #5f5290;
+	border:none;
+}
+
+QLabel::disabled {
+
+	color:#b6b6b6;
+	background-color: #e7e7e7;
+}</string>
+            </property>
+            <property name="text">
+             <string>ASCII</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEditSecondaryDataAscii">
+            <property name="minimumSize">
+             <size>
+              <width>160</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+
+	border:1px solid black;
+	color: #000000;
+}
+
+QLineEdit::disabled{
+
+	color:#b6b6b6;
+	border: 1px solid #b6b6b6;
+	
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string>hellocan</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="pushButtonSecondarySendAscii">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	background-color:#5f5290;
+	color:#ffffff;
+	border:2px solid #5f5290;
+}
+
+QPushButton:hover
+{
+	background-color:#3f3761;
+	color:#ffffff;
+	border: 2px solid #3f3761;
+}
+
+QPushButton:pressed
+{
+	background-color:transparent;
+	color:#000000;
+	border: 2px solid #5f5290;
+}
+
+QPushButton:disabled
+{
+	background-color:#cccccc;
+	color:#959595;
+	border: 2px solid #cccccc;
+}</string>
+            </property>
+            <property name="text">
+             <string>SEND</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="labelSecondaryDataHex">
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	color: #5f5290;
+	border:none;
+}
+
+QLabel::disabled {
+
+	color:#b6b6b6;
+	background-color: #e7e7e7;
+}</string>
+            </property>
+            <property name="text">
+             <string>HEX</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEditSecondaryDataHex">
+            <property name="minimumSize">
+             <size>
+              <width>160</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+
+	border:1px solid black;
+	color: #000000;
+}
+
+QLineEdit::disabled{
+
+	color:#b6b6b6;
+	border: 1px solid #b6b6b6;
+	
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string>FFFFFFFFFFFFFFFF</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QPushButton" name="pushButtonSecondarySendHex">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+	background-color:#5f5290;
+	color:#ffffff;
+	border:2px solid #5f5290;
+}
+
+QPushButton:hover
+{
+	background-color:#3f3761;
+	color:#ffffff;
+	border: 2px solid #3f3761;
+}
+
+QPushButton:pressed
+{
+	background-color:transparent;
+	color:#000000;
+	border: 2px solid #5f5290;
+}
+
+QPushButton:disabled
+{
+	background-color:#cccccc;
+	color:#959595;
+	border: 2px solid #cccccc;
+}</string>
+            </property>
+            <property name="text">
+             <string>SEND</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
